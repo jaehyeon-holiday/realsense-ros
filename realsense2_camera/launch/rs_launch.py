@@ -320,11 +320,15 @@ def launch_setup(context, params, param_name_suffix=""):
                 (
                     "/camera/camera/color/image_raw",
                     "/hday/sensor/camera/rgb",
-                ),  # Example remap for color image
+                ),
                 (
                     "/camera/camera/depth/image_rect_raw",
                     "/hday/sensor/camera/depth",
-                ),  # Example remap for depth image
+                ),
+                (
+                    "/camera/camera/color/camera_info",
+                    "/hday/sensor/camera/cam_info",
+                ),
             ],
         )
     ]
