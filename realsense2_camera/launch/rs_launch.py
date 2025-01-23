@@ -216,7 +216,7 @@ configurable_parameters = [
     },
     {
         "name": "align_depth.enable",
-        "default": "false",
+        "default": "true",
         "description": "enable align depth filter",
     },
     {
@@ -322,7 +322,7 @@ def launch_setup(context, params, param_name_suffix=""):
                     "/hday/sensor/camera/rgb",
                 ),
                 (
-                    "/camera/camera/depth/image_rect_raw",
+                    "/camera/camera/aligned_depth_to_color/image_raw",
                     "/hday/sensor/camera/depth",
                 ),
                 (
