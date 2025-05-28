@@ -69,7 +69,7 @@ configurable_parameters = [
     {"name": "enable_color", "default": "true", "description": "enable color stream"},
     {
         "name": "rgb_camera.color_profile",
-        "default": "0,0,0",
+        "default": "640x480x30",
         "description": "color stream profile",
     },
     {
